@@ -12,7 +12,7 @@ without AI assistance.
 | `hackerrank/` | HackerRank Python basics |
 | `hackerrank/timed/` | Timed practice runs, named `<date>_<title>` |
 | `templates/` | The starting file for every problem |
-| `tools/` | Small scripts that create problem files and list re-solves |
+| `tools/` | Small scripts: what to solve today, new problem files, re-solves, the problem list |
 
 ## Method
 
@@ -25,13 +25,22 @@ Every file follows the same six steps, written as comments before the code:
 5. **Review:** trace an example by hand before running.
 6. **Evaluate:** state the final complexity.
 
-The header at the top of each file is the practice log: pattern, minutes taken, whether I solved it
-alone, and a re-solve date three days later when I did not.
+The header at the top of each file is the practice log: pattern, minutes taken and whether I solved
+it alone. Anything I did not solve alone is re-solved from scratch on Saturday.
+
+## Weekly routine
+
+| Mon, Tue, Thu, Fri | Wed | Sat | Sun |
+|---|---|---|---|
+| New problem in Python | New problem in C++ | Re-solve the week's misses | Timed HackerRank run |
+
+Problems follow the Blind 75 in NeetCode's topic order (`tools/blind75.txt`).
 
 ## Tools
 
 ```bash
-python3 tools/due.py                                                # re-solves due today, first
+python3 tools/today.py                                              # what to solve today
+python3 tools/due.py                                                # problems waiting for a re-solve
 python3 tools/new.py 217 "Contains Duplicate" --lang py --difficulty Easy
 python3 tools/new.py 217 "Contains Duplicate" --lang cpp
 python3 tools/new.py "Two Strings" --hackerrank                      # timed run
