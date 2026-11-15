@@ -1,0 +1,79 @@
+# Blind 75 in NeetCode's topic order.
+# Source: https://raw.githubusercontent.com/neetcode-gh/leetcode/main/.problemSiteData.json (read 15 Nov 2026)
+# Columns: number | difficulty | topic | title | leetcode slug | premium (free version on neetcode.io)
+
+217 | Easy | Arrays & Hashing | Contains Duplicate | contains-duplicate
+242 | Easy | Arrays & Hashing | Valid Anagram | valid-anagram
+1 | Easy | Arrays & Hashing | Two Sum | two-sum
+49 | Medium | Arrays & Hashing | Group Anagrams | group-anagrams
+347 | Medium | Arrays & Hashing | Top K Frequent Elements | top-k-frequent-elements
+238 | Medium | Arrays & Hashing | Product of Array Except Self | product-of-array-except-self
+271 | Medium | Arrays & Hashing | Encode and Decode Strings | encode-and-decode-strings | premium
+128 | Medium | Arrays & Hashing | Longest Consecutive Sequence | longest-consecutive-sequence
+125 | Easy | Two Pointers | Valid Palindrome | valid-palindrome
+15 | Medium | Two Pointers | 3Sum | 3sum
+11 | Medium | Two Pointers | Container With Most Water | container-with-most-water
+121 | Easy | Sliding Window | Best Time to Buy And Sell Stock | best-time-to-buy-and-sell-stock
+3 | Medium | Sliding Window | Longest Substring Without Repeating Characters | longest-substring-without-repeating-characters
+424 | Medium | Sliding Window | Longest Repeating Character Replacement | longest-repeating-character-replacement
+76 | Hard | Sliding Window | Minimum Window Substring | minimum-window-substring
+20 | Easy | Stack | Valid Parentheses | valid-parentheses
+153 | Medium | Binary Search | Find Minimum In Rotated Sorted Array | find-minimum-in-rotated-sorted-array
+33 | Medium | Binary Search | Search In Rotated Sorted Array | search-in-rotated-sorted-array
+206 | Easy | Linked List | Reverse Linked List | reverse-linked-list
+21 | Easy | Linked List | Merge Two Sorted Lists | merge-two-sorted-lists
+143 | Medium | Linked List | Reorder List | reorder-list
+19 | Medium | Linked List | Remove Nth Node From End of List | remove-nth-node-from-end-of-list
+141 | Easy | Linked List | Linked List Cycle | linked-list-cycle
+23 | Hard | Linked List | Merge K Sorted Lists | merge-k-sorted-lists
+226 | Easy | Trees | Invert Binary Tree | invert-binary-tree
+104 | Easy | Trees | Maximum Depth of Binary Tree | maximum-depth-of-binary-tree
+100 | Easy | Trees | Same Tree | same-tree
+572 | Easy | Trees | Subtree of Another Tree | subtree-of-another-tree
+235 | Medium | Trees | Lowest Common Ancestor of a Binary Search Tree | lowest-common-ancestor-of-a-binary-search-tree
+102 | Medium | Trees | Binary Tree Level Order Traversal | binary-tree-level-order-traversal
+98 | Medium | Trees | Validate Binary Search Tree | validate-binary-search-tree
+230 | Medium | Trees | Kth Smallest Element In a Bst | kth-smallest-element-in-a-bst
+105 | Medium | Trees | Construct Binary Tree From Preorder And Inorder Traversal | construct-binary-tree-from-preorder-and-inorder-traversal
+124 | Hard | Trees | Binary Tree Maximum Path Sum | binary-tree-maximum-path-sum
+297 | Hard | Trees | Serialize And Deserialize Binary Tree | serialize-and-deserialize-binary-tree
+208 | Medium | Tries | Implement Trie Prefix Tree | implement-trie-prefix-tree
+211 | Medium | Tries | Design Add And Search Words Data Structure | design-add-and-search-words-data-structure
+212 | Hard | Tries | Word Search II | word-search-ii
+295 | Hard | Heap / Priority Queue | Find Median From Data Stream | find-median-from-data-stream
+39 | Medium | Backtracking | Combination Sum | combination-sum
+79 | Medium | Backtracking | Word Search | word-search
+200 | Medium | Graphs | Number of Islands | number-of-islands
+133 | Medium | Graphs | Clone Graph | clone-graph
+417 | Medium | Graphs | Pacific Atlantic Water Flow | pacific-atlantic-water-flow
+207 | Medium | Graphs | Course Schedule | course-schedule
+323 | Medium | Graphs | Number of Connected Components In An Undirected Graph | number-of-connected-components-in-an-undirected-graph | premium
+261 | Medium | Graphs | Graph Valid Tree | graph-valid-tree | premium
+269 | Hard | Advanced Graphs | Alien Dictionary | alien-dictionary | premium
+70 | Easy | 1-D Dynamic Programming | Climbing Stairs | climbing-stairs
+198 | Medium | 1-D Dynamic Programming | House Robber | house-robber
+213 | Medium | 1-D Dynamic Programming | House Robber II | house-robber-ii
+5 | Medium | 1-D Dynamic Programming | Longest Palindromic Substring | longest-palindromic-substring
+647 | Medium | 1-D Dynamic Programming | Palindromic Substrings | palindromic-substrings
+91 | Medium | 1-D Dynamic Programming | Decode Ways | decode-ways
+322 | Medium | 1-D Dynamic Programming | Coin Change | coin-change
+152 | Medium | 1-D Dynamic Programming | Maximum Product Subarray | maximum-product-subarray
+139 | Medium | 1-D Dynamic Programming | Word Break | word-break
+300 | Medium | 1-D Dynamic Programming | Longest Increasing Subsequence | longest-increasing-subsequence
+62 | Medium | 2-D Dynamic Programming | Unique Paths | unique-paths
+1143 | Medium | 2-D Dynamic Programming | Longest Common Subsequence | longest-common-subsequence
+53 | Medium | Greedy | Maximum Subarray | maximum-subarray
+55 | Medium | Greedy | Jump Game | jump-game
+57 | Medium | Intervals | Insert Interval | insert-interval
+56 | Medium | Intervals | Merge Intervals | merge-intervals
+435 | Medium | Intervals | Non Overlapping Intervals | non-overlapping-intervals
+252 | Easy | Intervals | Meeting Rooms | meeting-rooms | premium
+253 | Medium | Intervals | Meeting Rooms II | meeting-rooms-ii | premium
+48 | Medium | Math & Geometry | Rotate Image | rotate-image
+54 | Medium | Math & Geometry | Spiral Matrix | spiral-matrix
+73 | Medium | Math & Geometry | Set Matrix Zeroes | set-matrix-zeroes
+191 | Easy | Bit Manipulation | Number of 1 Bits | number-of-1-bits
+338 | Easy | Bit Manipulation | Counting Bits | counting-bits
+190 | Easy | Bit Manipulation | Reverse Bits | reverse-bits
+268 | Easy | Bit Manipulation | Missing Number | missing-number
+371 | Medium | Bit Manipulation | Sum of Two Integers | sum-of-two-integers
