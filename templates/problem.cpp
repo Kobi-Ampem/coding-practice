@@ -8,7 +8,6 @@ Pattern =
 Date = {date}
 Minutes =
 Solved alone = Y/N
-Re-solve by =
 Re-solved =
 
 Build: g++ -std=c++17 -Wall -Wextra -O2 {filename} && ./a.out

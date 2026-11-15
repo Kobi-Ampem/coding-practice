@@ -1,13 +1,12 @@
-"""List problems due for a re-solve, oldest first.
+"""List problems waiting for a re-solve, oldest first.
 
     python3 tools/due.py
 
-A problem is due when its header says "Solved alone = N", its "Re-solve by"
-date is today or earlier, and "Re-solved" is still empty. Re-solves come
-before any new problem.
+A problem waits when its header says "Solved alone = N" and "Re-solved" is
+still empty. Saturdays clear the whole list: rewrite each one from scratch,
+then fill in "Re-solved = <date>".
 """
 
-import datetime
 import re
 from pathlib import Path
 
@@ -20,28 +19,25 @@ def header_value(text: str, key: str) -> str:
     return match.group(1).strip() if match else ""
 
 
-def main() -> None:
-    today = datetime.date.today()
-    due = []
+def pending() -> list[tuple[str, Path, str]]:
+    """(date, path, problem) for every problem marked N and not yet re-solved."""
+    waiting = []
     for folder in FOLDERS:
         for path in sorted((ROOT / folder).rglob("*")):
             if path.suffix not in {".py", ".cpp"}:
                 continue
             text = path.read_text(encoding="utf-8")
-            if header_value(text, "Solved alone").upper() != "N" or header_value(text, "Re-solved"):
-                continue
-            try:
-                by = datetime.date.fromisoformat(header_value(text, "Re-solve by"))
-            except ValueError:
-                print(f"check {path.relative_to(ROOT)}: Solved alone = N but no valid Re-solve by date")
-                continue
-            if by <= today:
-                due.append((by, path))
+            if header_value(text, "Solved alone").upper() == "N" and not header_value(text, "Re-solved"):
+                waiting.append((header_value(text, "Date"), path, header_value(text, "Problem")))
+    return sorted(waiting)
 
-    if not due:
-        print("Nothing due")
-    for by, path in sorted(due):
-        print(f"{by}  {path.relative_to(ROOT)}  ({header_value(path.read_text(encoding='utf-8'), 'Problem')})")
+
+def main() -> None:
+    waiting = pending()
+    if not waiting:
+        print("Nothing waiting for a re-solve")
+    for date, path, problem in waiting:
+        print(f"{date}  {path.relative_to(ROOT)}  ({problem})")
 
 
 if __name__ == "__main__":

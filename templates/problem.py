@@ -8,7 +8,6 @@ Pattern =
 Date = {date}
 Minutes =
 Solved alone = Y/N
-Re-solve by =
 Re-solved =
 """
 
